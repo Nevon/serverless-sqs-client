@@ -1,0 +1,27 @@
+{
+  "name": "serverless-sqs-client",
+  "version": "1.0.0",
+  "description": "Lets you use the same SQS client whether you're working locally or against AWS online",
+  "main": "src/index.js",
+  "repository": "https://github.com/Nevon/serverless-sqs-client",
+  "author": "Tommy Brunn <tommy.brunn@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.85.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.1",
+    "prettier": "^1.5.3"
+  }
+}
